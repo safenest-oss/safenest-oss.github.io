@@ -1,0 +1,4 @@
+Inter is Copyright (c) The Inter Project Authors (https://github.com/rsms/inter)
+and is licensed under the SIL Open Font License, Version 1.1.
+License text: https://openfontlicense.org
+These files are Latin / Latin Extended subsets of the original font.

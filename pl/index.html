@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>SafeNest: No Shorts dla rodziców</title>
+<meta name="description" content="Ile filmów obejrzy Twoje dziecko, zanim zje obiad? Darmowe, otwarte narzędzie ukrywające YouTube Shorts, bez zbierania danych. Fakty ze źródłami i poradnik Family Link.">
+<meta name="theme-color" content="#2563eb">
+<meta property="og:title" content="SafeNest: No Shorts dla rodziców">
+<meta property="og:description" content="Ile filmów obejrzy Twoje dziecko, zanim zje obiad? Darmowe, otwarte narzędzie ukrywające YouTube Shorts, bez zbierania danych. Fakty ze źródłami i poradnik Family Link.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://safenest-oss.org/pl/">
+<link rel="canonical" href="https://safenest-oss.org/pl/">
+<link rel="alternate" hreflang="en" href="https://safenest-oss.org/">
+<link rel="alternate" hreflang="pl" href="https://safenest-oss.org/pl/">
+<link rel="alternate" hreflang="x-default" href="https://safenest-oss.org/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do treści</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="/pl/"><svg width="40" height="40" viewBox="0 0 48 48" role="img" aria-label="SafeNest"><rect width="48" height="48" rx="12" fill="#2563eb"/><ellipse cx="24" cy="18" rx="6.5" ry="8" fill="#fbbf24"/><path d="M9 27 Q24 47 39 27" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/><path d="M14 32 Q24 43 34 32" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7"/></svg><span>SafeNest</span></a>
+<nav class="nav" aria-label="Main"><a href="/pl/#symulator">Symulator</a><a href="/pl/#fakty">Fakty</a><a href="/pl/#dzialaj">Co zrobić</a><a href="https://github.com/safenest-oss">GitHub</a><a class="lang" href="/" hreflang="en" lang="en">English</a></nav>
+</div></header>
+<main id="main">
+
+<section id="start" class="hero"><div class="wrap">
+<div class="copy">
+<span class="pill">Dla rodziców</span>
+<h1>Ile filmów obejrzy Twoje dziecko, zanim zje obiad?</h1>
+<p class="lead">Shorts nie mają końca: po jednym filmie od razu startuje następny. Przewiń kilka razy w symulatorze obok i zobacz to na sobie. Zajmie to pół minuty.</p>
+<div class="row"><a class="btn lg" href="#dzialaj">Zainstaluj No Shorts</a><a class="btn lg ghost" href="#fakty">Zobacz, co mówią badania</a></div>
+<div class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>Bez śledzenia, bez kont, bez zbierania danych</span></div>
+</div>
+<div id="symulator" class="sim">
+<p class="cap">Symulacja · wszystkie filmy są wymyślone</p>
+<div class="phone"><div id="sim-screen" class="screen">
+<p id="sim-text">Nie uwierzysz, co stało się dalej…</p>
+<div class="who">@przykladowy_kanal</div>
+<div class="icons"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></div>
+<div class="bar"><i></i></div>
+</div></div>
+<div class="stats" aria-live="polite"><span class="pill sand">Obejrzane: <span id="sim-count">1</span></span><span class="pill sand">Czas: <span id="sim-time">0:30</span></span></div>
+<button id="sim-next" class="btn dark" type="button"><span>Przewiń dalej</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+<p class="small">Zakładamy ok. 30 sekund na film. To przykład, nie pomiar.</p>
+<div id="sim-nudge" class="nudge" hidden><strong>Minęło już <span id="sim-nudge-time"></span>.</strong> Nic Cię nie zatrzymało: nie było ekranu końcowego ani sygnału „wystarczy". Na YouTube tego końca nie ma.<br><button id="sim-reset" type="button">Zacznij od nowa</button></div>
+</div>
+</div></section>
+
+<section id="kalkulator" class="alt"><div class="wrap calc-wrap">
+<div class="intro"><h2>Ile to wychodzi w ciągu roku?</h2><p class="lead sm">Przesuń suwak na tyle minut dziennie, ile Twoje dziecko spędza dziś na krótkich filmach. Rachunek jest prosty: minuty × 365 ÷ 60.</p></div>
+<div class="calc">
+<div><label for="mins">Minut dziennie: <b id="mins-val">45</b></label>
+<input id="mins" type="range" min="5" max="180" step="5" value="45">
+<div class="scale"><span>5 min</span><span>3 godziny</span></div></div>
+<div class="results" aria-live="polite">
+<div class="result"><b id="calc-hours">274</b><span>godzin w roku</span></div>
+<div class="result"><b id="calc-days">11,4</b><span>w przeliczeniu na pełne doby</span></div>
+</div>
+<p class="note">To przykład do przemyślenia, a nie pomiar Twojego dziecka.</p>
+</div>
+</div></section>
+
+<section id="fakty"><div class="wrap">
+<div class="section-head"><h2>Co mówią badania, i czego nie mówią</h2><p class="lead sm">Nie straszymy. Pokazujemy, co wiadomo, razem ze źródłami i ograniczeniami.</p></div>
+<div class="grid">
+<article class="card"><div class="stat">71 badań</div><h3>Uwaga, stres i sen</h3>
+<p>Meta-analiza z „Psychological Bulletin" (ok. 98 tys. uczestników) łączy intensywne oglądanie krótkich filmów z gorszą uwagą i kontrolą impulsów oraz z większym stresem, lękiem i gorszym snem.</p>
+<p class="caveat"><strong>Czego to nie dowodzi:</strong> to korelacja. Nie wiadomo, czy filmy są przyczyną, czy sięgają po nie osoby, którym jest trudniej.</p>
+<a class="src" href="https://www.business-standard.com/health/short-video-use-focus-anxiety-cognition-mental-health-study-125112400421_1.html">Źródło: Business Standard o meta-analizie</a></article>
+<article class="card"><div class="stat">5 h 36 min</div><h3>Czas w sieci</h3>
+<p>Według raportu NASK „Nastolatki 3.0" (2023) nastolatki spędzają online średnio 5 godzin 36 minut dziennie, a ok. co czwarty (25,6%) ma trudność, by myśleć o czymś innym niż media społecznościowe.</p>
+<p class="caveat"><strong>Czego to nie dowodzi:</strong> raport dotyczy internetu w ogóle, a nie samych krótkich filmów.</p>
+<a class="src" href="https://www.gov.pl/web/baza-wiedzy/mlodziez-w-internecie---raport-nastolatki-31">Źródło: NASK, Nastolatki 3.0 (gov.pl)</a></article>
+<article class="card"><div class="stat">ok. 4 min</div><h3>Jak szybko działa algorytm</h3>
+<p>W teście NASK i dyżurnet.pl nowe konto zarejestrowane jako nastolatek dostało na TikToku treści typu patostream już po ok. czterech minutach.</p>
+<p class="caveat"><strong>Czego to nie dowodzi:</strong> test dotyczy TikToka, nie YouTube Shorts, a pełnej metodologii nie opublikowano.</p>
+<a class="src" href="https://www.money.pl/gospodarka/wystarczy-pare-minut-sprawdzili-jak-szybko-trafia-na-patotresci-7086214909729440a.html">Źródło: money.pl o teście NASK (X 2024)</a></article>
+</div></div></section>
+
+<section id="dzialaj" class="alt"><div class="wrap">
+<div class="section-head wide"><h2>Co możesz zrobić już dziś</h2></div>
+<div class="grid">
+<div class="card"><div class="num">1</div><h3>Zainstaluj No Shorts</h3>
+<p>Rozszerzenie do Chrome ukrywa Shorts w wyszukiwarce, na stronie głównej, w menu i na kanałach. Linki do Shorts otwierają się jak zwykłe filmy.</p>
+<p class="note">Na profilu dziecka z Family Link instaluj ze sklepu Chrome: dziecko klika „Poproś rodzica", a Ty zatwierdzasz hasłem. Ustawienie Family Link „Rozszerzenia" zostaw wyłączone. Dziecko może jednak samo usunąć rozszerzenie bez hasła.</p>
+<a class="btn" href="https://chromewebstore.google.com/detail/no-shorts/mdfcjmongbnjhgmaigbeohlkekepkohp">Dodaj ze sklepu Chrome</a></div>
+<div class="card"><div class="num">2</div><h3>Ustaw limit Shorts w Family Link</h3>
+<p>Na telefonie rozszerzeń nie ma, ale YouTube ma wbudowany dzienny limit Shorts. Zero minut oznacza blokadę. Przetestowaliśmy to na koncie dziecka poniżej 13 lat. Działa tylko, gdy dziecko używa własnego konta Google wszędzie.</p>
+<a class="btn" href="/pl/poradniki/limit-shorts-na-telefonie/">Zobacz poradnik krok po kroku</a></div>
+<div class="card"><div class="num">3</div><h3>Porozmawiaj</h3>
+<p>Rozmowa działa lepiej niż jakiekolwiek narzędzie. Na początek zapytaj:</p>
+<ul class="q"><li>„Co ostatnio Cię rozśmieszyło w internecie?"</li><li>„Zdarza Ci się oglądać dłużej, niż chcesz?"</li><li>„Co byś zmienił, gdybyś mógł?"</li></ul></div>
+</div></div></section>
+
+<section id="zasady" class="dark"><div class="wrap">
+<div class="section-head"><h2>Prywatność jako zasada, nie dodatek</h2><p class="lead sm">Narzędzia dla dzieci muszą być godne zaufania z założenia.</p></div>
+<div class="grid">
+<div class="col"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><h3>Zero danych</h3><p>No Shorts nie zbiera, nie zapisuje ani nie wysyła żadnych danych. Nie ma kont, analityki ani śledzenia.</p></div>
+<div class="col"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg><h3>Otwarty kod</h3><p>Każdy może sprawdzić, co robi rozszerzenie. Projekt jest darmowy i ma licencję MIT.</p></div>
+<div class="col"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><h3>Uczciwe ograniczenia</h3><p>Działa na komputerze. Dziecko z pełną kontrolą nad profilem może je wyłączyć. Nie zastąpi rozmowy ani nadzoru.</p></div>
+</div></div></section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="about"><div class="logo"><svg width="32" height="32" viewBox="0 0 48 48" role="img" aria-label="SafeNest"><rect width="48" height="48" rx="12" fill="#2563eb"/><ellipse cx="24" cy="18" rx="6.5" ry="8" fill="#fbbf24"/><path d="M9 27 Q24 47 39 27" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/><path d="M14 32 Q24 43 34 32" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7"/></svg><span>SafeNest OSS</span></div><p>Małe, otwarte narzędzia, które czynią internet bezpieczniejszym dla dzieci w wieku 5-18 lat.</p><p class="fine">Ta strona nie używa cookies ani analityki.</p></div>
+<nav aria-label="Footer"><a href="https://github.com/safenest-oss">GitHub</a><a href="https://github.com/safenest-oss/no-shorts/blob/main/PRIVACY.md">Polityka prywatności</a><a href="https://github.com/safenest-oss/no-shorts/blob/main/LICENSE">Licencja MIT</a></nav>
+</div></footer>
+</body>
+</html>
