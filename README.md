@@ -13,7 +13,9 @@ Source of the SafeNest OSS website: <https://safenest-oss.org>
 | `/` | Organization hub (EN) |
 | `/no-shorts/` | No Shorts project page (EN) |
 | `/guides/youtube-shorts-limit/` | Guide: Shorts limit on phones (EN) |
+| `/about/` | About: what, how, who (EN) |
 | `/pl/` | Landing page for parents (PL) |
+| `/pl/o-nas/` | About (PL) |
 | `/pl/poradniki/limit-shorts-na-telefonie/` | Guide (PL) |
 
 ## Contributing
