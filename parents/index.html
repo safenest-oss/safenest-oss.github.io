@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>For parents: how many videos will your child watch before dinner? | SafeNest OSS</title>
+<meta name="description" content="Try the Shorts scroll simulator, see what research says (with sources and limits) and what you can do today. Free, open source No Shorts for Chrome, no data collection.">
+<meta name="theme-color" content="#2563eb">
+<meta property="og:title" content="For parents: how many videos will your child watch before dinner? | SafeNest OSS">
+<meta property="og:description" content="Try the Shorts scroll simulator, see what research says (with sources and limits) and what you can do today. Free, open source No Shorts for Chrome, no data collection.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://safenest-oss.org/parents/">
+<link rel="canonical" href="https://safenest-oss.org/parents/">
+<link rel="alternate" hreflang="en" href="https://safenest-oss.org/parents/">
+<link rel="alternate" hreflang="pl" href="https://safenest-oss.org/pl/">
+<link rel="alternate" hreflang="x-default" href="https://safenest-oss.org/parents/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="/"><svg width="40" height="40" viewBox="0 0 48 48" role="img" aria-label="SafeNest"><rect width="48" height="48" rx="12" fill="#2563eb"/><ellipse cx="24" cy="18" rx="6.5" ry="8" fill="#fbbf24"/><path d="M9 27 Q24 47 39 27" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/><path d="M14 32 Q24 43 34 32" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7"/></svg><span>SafeNest <small>OSS</small></span></a>
+<nav class="nav" aria-label="Main"><a href="/parents/">For parents</a><a href="/no-shorts/">No Shorts</a><a href="/guides/youtube-shorts-limit/">Guides</a><a href="/about/">About</a><a href="https://github.com/safenest-oss">GitHub</a><a class="lang" href="/pl/" hreflang="pl" lang="pl">Polski</a></nav>
+</div></header>
+<main id="main">
+
+<section id="start" class="hero"><div class="wrap">
+<div class="copy">
+<span class="pill">For parents</span>
+<h1>How many videos will your child watch before dinner?</h1>
+<p class="lead">Shorts never end: when one video finishes, the next starts at once. Swipe a few times in the simulator and see it for yourself. It takes half a minute.</p>
+<div class="row"><a class="btn lg" href="#act">Install No Shorts</a><a class="btn lg ghost" href="#facts">See what research says</a></div>
+<div class="check"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>No tracking, no accounts, no data collection</span></div>
+</div>
+<div id="symulator" class="sim">
+<p class="cap">Simulation · all videos are made up</p>
+<div class="phone"><div id="sim-screen" class="screen">
+<p id="sim-text">You won't believe what happened next…</p>
+<div class="who">@example_channel</div>
+<div class="icons"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></div>
+<div class="bar"><i></i></div>
+</div></div>
+<div class="stats" aria-live="polite"><span class="pill sand">Watched: <span id="sim-count">1</span></span><span class="pill sand">Time: <span id="sim-time">0:30</span></span></div>
+<button id="sim-next" class="btn dark" type="button"><span>Swipe to the next</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+<p class="small">We assume about 30 seconds per video. It is an example, not a measurement.</p>
+<div id="sim-nudge" class="nudge" hidden><strong><span id="sim-nudge-time"></span> minutes have already passed.</strong> Nothing stopped you: there was no end screen and no "enough" signal. On YouTube there is no end.<br><button id="sim-reset" type="button">Start again</button></div>
+</div>
+</div></section>
+
+<section id="calculator" class="alt"><div class="wrap calc-wrap">
+<div class="intro"><h2>How much is that in a year?</h2><p class="lead sm">Move the slider to the minutes per day your child spends on short videos today. The maths is simple: minutes × 365 ÷ 60.</p></div>
+<div class="calc">
+<div><label for="mins">Minutes per day: <b id="mins-val">45</b></label>
+<input id="mins" type="range" min="5" max="180" step="5" value="45">
+<div class="scale"><span>5 min</span><span>3 hours</span></div></div>
+<div class="results" aria-live="polite">
+<div class="result"><b id="calc-hours">274</b><span>hours a year</span></div>
+<div class="result"><b id="calc-days">11.4</b><span>in full 24-hour days</span></div>
+</div>
+<p class="note">This is an example to think about, not a measurement of your child.</p>
+</div>
+</div></section>
+
+<section id="facts"><div class="wrap">
+<div class="section-head"><h2>What research says, and what it does not</h2><p class="lead sm">We do not scare. We show what is known, with sources and limits.</p></div>
+<div class="grid">
+<article class="card"><div class="stat">71 studies</div><h3>Attention, stress and sleep</h3>
+<p>A meta-analysis in Psychological Bulletin (about 98,000 participants) links heavy short-video use with poorer attention and impulse control, and with more stress, anxiety and poorer sleep.</p>
+<p class="caveat"><strong>What this does not prove:</strong> it is a correlation. It is not known whether the videos cause it, or whether people who struggle more reach for them.</p>
+<a class="src" href="https://www.business-standard.com/health/short-video-use-focus-anxiety-cognition-mental-health-study-125112400421_1.html">Source: Business Standard on the meta-analysis</a></article>
+<article class="card"><div class="stat">5 h 36 min</div><h3>Time online</h3>
+<p>According to the NASK report "Nastolatki 3.0" (Teens 3.0, 2023), teenagers in Poland spend on average 5 hours 36 minutes online per day, and about one in four (25.6%) finds it hard to think about anything other than social media.</p>
+<p class="caveat"><strong>What this does not prove:</strong> the report covers the internet in general, not short videos alone.</p>
+<a class="src" href="https://www.gov.pl/web/baza-wiedzy/mlodziez-w-internecie---raport-nastolatki-31">Source: NASK, Nastolatki 3.0 (gov.pl, in Polish)</a></article>
+<article class="card"><div class="stat">about 4 min</div><h3>How fast the algorithm works</h3>
+<p>In a test by NASK and Dyżurnet.pl, a new TikTok account registered as a teenager received "patostream"-type content (videos of harmful behaviour streamed for attention) after about four minutes.</p>
+<p class="caveat"><strong>What this does not prove:</strong> the test concerns TikTok, not YouTube Shorts, and the full methodology was not published.</p>
+<a class="src" href="https://www.money.pl/gospodarka/wystarczy-pare-minut-sprawdzili-jak-szybko-trafia-na-patotresci-7086214909729440a.html">Source: money.pl on the NASK test (in Polish)</a></article>
+</div></div></section>
+
+<section id="act" class="alt"><div class="wrap">
+<div class="section-head wide"><h2>What you can do today</h2></div>
+<div class="grid">
+<div class="card"><div class="num">1</div><h3>Install No Shorts</h3>
+<p>The Chrome extension hides Shorts in search, on the home page, in the menu and on channels. Links to Shorts open like normal videos.</p>
+<p class="note">On a child's Family Link profile, install from the Chrome Web Store: the child taps "Ask a parent" and you approve with your password. Keep the Family Link setting "Extensions" turned off. A child can still remove the extension without a password.</p>
+<a class="btn" href="https://chromewebstore.google.com/detail/no-shorts/mdfcjmongbnjhgmaigbeohlkekepkohp">Add from Chrome Web Store</a></div>
+<div class="card"><div class="num">2</div><h3>Set the Shorts limit in Family Link</h3>
+<p>Extensions do not exist on phones, but YouTube has a built-in daily Shorts limit. Zero minutes means blocked. We tested it on the account of a child under 13. It only works when the child uses their own Google account everywhere.</p>
+<a class="btn" href="/guides/youtube-shorts-limit/">See the step-by-step guide</a></div>
+<div class="card"><div class="num">3</div><h3>Talk</h3>
+<p>A conversation works better than any tool. To start, ask:</p>
+<ul class="q"><li>"What made you laugh online lately?"</li><li>"Do you ever watch for longer than you mean to?"</li><li>"What would you change if you could?"</li></ul></div>
+</div></div></section>
+
+<section id="principles" class="dark"><div class="wrap">
+<div class="section-head"><h2>Privacy as a rule, not an add-on</h2><p class="lead sm">Tools for children have to be trustworthy by design.</p></div>
+<div class="grid">
+<div class="col"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><h3>Zero data</h3><p>No Shorts does not collect, store or send any data. No accounts, no analytics, no tracking.</p></div>
+<div class="col"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg><h3>Open source</h3><p>Anyone can check what the extension does. The project is free and MIT licensed.</p></div>
+<div class="col"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><h3>Honest limits</h3><p>It works on a computer. A child with full control of the profile can turn it off. It does not replace conversation or supervision.</p></div>
+</div></div></section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="about"><div class="logo"><svg width="32" height="32" viewBox="0 0 48 48" role="img" aria-label="SafeNest"><rect width="48" height="48" rx="12" fill="#2563eb"/><ellipse cx="24" cy="18" rx="6.5" ry="8" fill="#fbbf24"/><path d="M9 27 Q24 47 39 27" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/><path d="M14 32 Q24 43 34 32" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7"/></svg><span>SafeNest OSS</span></div><p>Small, open tools that make the internet safer for children aged 5-18.</p><p class="fine">This site uses no cookies and no analytics.</p></div>
+<nav aria-label="Footer"><a href="https://github.com/safenest-oss">GitHub</a><a href="https://github.com/safenest-oss/no-shorts/blob/main/PRIVACY.md">Privacy policy</a><a href="https://github.com/safenest-oss/no-shorts/blob/main/LICENSE">MIT license</a></nav>
+</div></footer>
+</body>
+</html>

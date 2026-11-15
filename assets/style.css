@@ -126,3 +126,4 @@ h3{margin:0;font-size:21px;font-weight:700}
 @media(max-width:600px){section{padding:56px 0}.hero{padding:40px 0 56px}.hero .wrap{gap:40px}.card,.calc{padding:24px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 .mt{margin-top:24px}.section-head.wide{max-width:none}
+.pill.sand span{margin-left:.35em}
