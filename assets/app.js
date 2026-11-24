@@ -42,4 +42,45 @@
     range.addEventListener("input", out);
     out();
   }
+
+  // Local ChatGPT parental-controls checklist. No storage, network calls or personal identifiers.
+  var cg = $("chatgpt-config");
+  if (cg) {
+    var age = $("cg-age"), device = $("cg-device"), goal = $("cg-goal"), level = $("cg-level");
+    var result = $("cg-result"), steps = $("cg-steps"), summary = $("cg-summary");
+    var addStep = function (value) { var li = document.createElement("li"); li.textContent = value; steps.appendChild(li); };
+    $("cg-generate").addEventListener("click", function () {
+      steps.textContent = "";
+      var a = age.value, d = device.value, g = goal.value, l = level.value;
+      if (a === "under13") {
+        summary.textContent = "Profil: dziecko poniżej 13 lat. Nie zakładaj samodzielnego konta ChatGPT dla dziecka.";
+        addStep("Jeśli ChatGPT jest używany w edukacji, dorosły musi prowadzić bezpośrednią interakcję. Nie przekazuj dziecku samodzielnego dostępu.");
+        addStep("Korzystaj z własnego konta dorosłego i nadzoruj każdą sesję. Nie traktuj kontroli rodzicielskiej nastolatków jako rozwiązania dla tego wieku.");
+      } else if (a === "adult") {
+        summary.textContent = "Profil: osoba pełnoletnia. Teen Parental Controls nie są przeznaczone do zarządzania kontem osoby dorosłej.";
+        addStep("Ustal zasady korzystania wspólnie z dorosłym użytkownikiem. Skorzystaj z ustawień konta i systemowych limitów urządzenia, jeśli są potrzebne.");
+      } else {
+        summary.textContent = "Profil: nastolatek " + (a === "13-15" ? "13–15" : "16–17") + " lat. Uzyskaj zgodę rodzica, połącz konta i wspólnie przejrzyj ustawienia.";
+        addStep("Połącz konta: Ustawienia → Kontrola rodzicielska → Dodaj członka rodziny. Nastolatek musi zaakceptować zaproszenie.");
+        addStep("Pozostaw włączone Ogranicz treści wrażliwe. Sprawdź też ustawienie Ulepszaj model dla wszystkich.");
+        addStep("Ustaw Godziny ciszy na czas snu i inne pory offline. Pamiętaj: to blokuje dostęp, w przeciwieństwie do Godzin nauki.");
+        if (g === "learning") addStep("Włącz Tryb nauki lub zaplanuj Godziny nauki. Nie blokują one ChatGPT i nie obejmują rozmów w GPT ani Projects.");
+        else if (g === "creative") addStep("Ustal, które funkcje kreatywne są potrzebne. Przejrzyj generowanie obrazów i Voice, zamiast automatycznie udostępniać wszystko.");
+        else addStep("Uzgodnij osobne zasady dla nauki i rozrywki; dobierz Godziny ciszy tak, by nie zastępowały rodzinnych ustaleń.");
+        addStep("Przejrzyj Voice, obrazy, Health, zapisane wspomnienia, przeglądarkę w chmurze i dostęp sieciowy Codex. Wyłącz niepotrzebne funkcje.");
+        addStep("Omów, że rodzic nie widzi historii rozmów ani aktywności na żywo. Ustal, kiedy nastolatek ma zgłaszać niepokojące odpowiedzi.");
+      }
+      if (l === "strict") addStep("Połącz kontrolę ChatGPT z mocniejszymi limitami urządzenia i regularnym wspólnym przeglądem zasad. Nie próbuj zastępować rozmowy ukrytym monitoringiem.");
+      if (l === "light") addStep("Postaw na wspólne reguły, edukację o prywatności i okresowe rozmowy. Zachowaj minimalne, sensowne ograniczenia.");
+      if (d === "ios" || d === "mixed") addStep("iPhone/iPad: skonfiguruj Czas przed ekranem i Chmurę rodzinną. Ustaw Czas bez urządzenia, limity aplikacji oraz Ograniczenia treści i prywatności; kod zachowaj dla rodzica.");
+      if (d === "android" || d === "mixed") addStep("Android: skonfiguruj Google Family Link, limity aplikacji i harmonogram czasu korzystania.");
+      if (d === "computer" || d === "mixed") addStep("Komputer: skonfiguruj kontrolę rodzinną systemu i oddzielne konto użytkownika dziecka.");
+      addStep("Na koniec sprawdź aktualne nazwy i dostępność ustawień w oficjalnej dokumentacji OpenAI. Ten konfigurator nie zmienia ustawień automatycznie.");
+      result.hidden = false;
+      result.scrollIntoView({behavior:"smooth",block:"start"});
+    });
+    $("cg-print").addEventListener("click", function () { window.print(); });
+    $("cg-reset").addEventListener("click", function () { age.selectedIndex=1; device.selectedIndex=0; goal.selectedIndex=0; level.selectedIndex=0; result.hidden=true; steps.textContent=""; summary.textContent=""; });
+  }
+
 })();
