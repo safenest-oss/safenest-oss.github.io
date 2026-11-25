@@ -127,3 +127,19 @@ h3{margin:0;font-size:21px;font-weight:700}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 .mt{margin-top:24px}.section-head.wide{max-width:none}
 .pill.sand span{margin-left:.35em}
+
+/* ChatGPT parental-controls guide and local checklist builder */
+.article .grid{margin:16px 0 20px}.article .grid+.note{margin-top:4px}
+.configurator{padding:28px;border:1px solid var(--line);border-radius:20px;background:#fff;display:flex;flex-direction:column;gap:22px;margin:28px 0}
+.config-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.config-grid>div{display:flex;flex-direction:column;gap:8px;min-width:0}
+.configurator label{font-size:15px;font-weight:700}
+.configurator select{width:100%;min-height:48px;padding:10px 12px;border:1px solid #a8a29e;border-radius:10px;background:#fff;color:var(--ink);font:inherit}
+.configurator select:focus-visible,.configurator button:focus-visible{outline:3px solid var(--blue-link);outline-offset:3px}
+.config-result{border-top:1px solid var(--line);padding-top:22px}
+.config-result h3{margin-bottom:10px}
+.config-result ol{padding-left:24px;display:flex;flex-direction:column;gap:12px}
+.config-result li{font-size:16px;line-height:1.6}
+.config-result[hidden]{display:none}
+@media(max-width:600px){.configurator{padding:20px}.config-grid{grid-template-columns:1fr}}
+@media print{.site-header,.site-footer,.skip,.config-grid,#cg-generate,#cg-reset,#cg-print{display:none!important}body{background:#fff}.article{padding:0}.configurator{border:0;padding:0}.config-result[hidden]{display:block}}
