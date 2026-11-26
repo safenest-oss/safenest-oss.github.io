@@ -1,0 +1,43 @@
+/* Nest Guardian game. Uses the colour variables from style.css; every class is prefixed g-. */
+.g-game{max-width:34rem;margin:0 auto;padding:24px 16px 56px;display:flex;flex-direction:column;gap:14px;font-size:18px;outline:none;scroll-margin-top:8px}
+.g-game h1,.g-game h2{line-height:1.2;text-wrap:balance;letter-spacing:-.01em}
+.g-game h1{font-size:2rem;text-align:center}
+.g-game h2{font-size:1.25rem}
+.g-game p{margin:0}
+.g-center{text-align:center}
+.g-soft{color:var(--stone)}
+.g-game .g-small{font-size:.875rem}
+.g-nest{display:block;width:100%;max-width:15rem;margin:0 auto;height:auto}
+.g-nest.g-small-nest{max-width:10.5rem}
+.g-card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.g-from{display:flex;align-items:center;gap:12px;min-width:0}
+.g-avatar{flex:none;width:44px;height:44px;border-radius:50%;background:var(--sand-2);display:grid;place-items:center;font-weight:800}
+.g-who{font-weight:800;line-height:1.25}
+.g-bubble{background:var(--sand-2);border-radius:6px 18px 18px 18px;padding:14px 16px;font-size:1.2rem;font-weight:500;overflow-wrap:anywhere}
+.g-choices{display:flex;flex-direction:column;gap:10px}
+.g-game button{font-family:inherit;cursor:pointer;border-radius:16px;min-height:58px;padding:12px 18px}
+.g-choice{display:flex;align-items:center;gap:14px;text-align:left;font-size:18px;font-weight:600;background:var(--white);color:var(--ink);border:2px solid var(--line)}
+@media(hover:hover){.g-choice:hover{border-color:var(--blue)}}
+.g-choice svg{flex:none;width:28px;height:28px;color:var(--blue-link)}
+.g-primary{background:var(--blue);color:var(--white);border:0;font-size:18px;font-weight:700}
+.g-primary:hover{background:var(--blue-link)}
+.g-feedback{border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.g-good{background:#e7f4ea;color:#14532d}
+.g-think{background:var(--tint);color:var(--amber-text)}
+.g-game .g-picked{font-size:.875rem;font-weight:600}
+.g-game ul{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:8px}
+.g-talk{background:var(--tint);color:var(--amber-text);border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.g-game .g-talk p.g-q{font-size:1.2rem;font-weight:600}
+.g-phone{font-weight:800;white-space:nowrap;user-select:all}
+.g-bowl{fill:#8a5a2b;opacity:.24}
+.g-root{stroke:#8a5a2b;opacity:.55}
+.g-twig{stroke:#8a5a2b}
+.g-twig2{stroke:#b07d43}
+.g-shell{fill:var(--amber)}
+.g-shell-line{stroke:var(--amber)}
+.g-shine{fill:var(--pill)}
+.g-egg-rock{transform-origin:120px 112px;animation:g-rock .7s ease-in-out 1}
+.g-twig-new{animation:g-drop .5s ease-out 1}
+@keyframes g-rock{0%,100%{transform:rotate(0)}30%{transform:rotate(-7deg)}65%{transform:rotate(6deg)}}
+@keyframes g-drop{from{transform:translateY(-26px);opacity:.2}to{transform:translateY(0);opacity:1}}
+@media(prefers-reduced-motion:reduce){.g-egg-rock,.g-twig-new{animation:none}}

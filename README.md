@@ -17,6 +17,8 @@ Source of the SafeNest OSS website: <https://safenest-oss.org>
 | `/pl/` | Landing page for parents (PL) |
 | `/pl/o-nas/` | About (PL) |
 | `/pl/poradniki/limit-shorts-na-telefonie/` | Guide (PL) |
+| `/games/nest-guardian/` | Game for children (EN) |
+| `/pl/gry/straznik-gniazda/` | Game for children (PL) |
 
 ## Contributing
 
