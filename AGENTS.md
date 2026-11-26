@@ -28,6 +28,7 @@ Plain static HTML, one CSS file and one small script. No build step, no framewor
 | `/about/`, `/pl/o-nas/` | About: what, how, who (EN, PL) |
 | `/guides/youtube-shorts-limit/`, `/pl/poradniki/limit-shorts-na-telefonie/` | Guide: Shorts limit on phones (EN, PL) |
 | `/games/nest-guardian/`, `/pl/gry/straznik-gniazda/` | Children's game (EN, PL); `/assets/game.js` and `/assets/game.css`, language from `<html lang>` |
+| `/games/feed-the-chick/`, `/pl/gry/nakarm-piskle/` | Feed the Chick game (EN, PL); `/assets/chick.js` and `/assets/chick.css` |
 | `/assets/style.css`, `/assets/app.js` | Shared styles; simulator and calculator (language from `<html lang>`) |
 | `/assets/fonts/` | Self-hosted Inter (SIL OFL, see `OFL-NOTICE.txt`) |
 | `CNAME`, `robots.txt`, `sitemap.xml`, `404.html` | Hosting files. Add every new page to `sitemap.xml` |

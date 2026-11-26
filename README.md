@@ -19,6 +19,8 @@ Source of the SafeNest OSS website: <https://safenest-oss.org>
 | `/pl/poradniki/limit-shorts-na-telefonie/` | Guide (PL) |
 | `/games/nest-guardian/` | Game for children (EN) |
 | `/pl/gry/straznik-gniazda/` | Game for children (PL) |
+| `/games/feed-the-chick/` | Moving game for children (EN) |
+| `/pl/gry/nakarm-piskle/` | Moving game for children (PL) |
 
 ## Contributing
 
