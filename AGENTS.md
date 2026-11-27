@@ -27,6 +27,7 @@ Plain static HTML, one CSS file and one small script. No build step, no framewor
 | `/no-shorts/` | No Shorts project page (EN) |
 | `/about/`, `/pl/o-nas/` | About: what, how, who (EN, PL) |
 | `/guides/youtube-shorts-limit/`, `/pl/poradniki/limit-shorts-na-telefonie/` | Guide: Shorts limit on phones (EN, PL) |
+| `/games/call-the-owl/`, `/pl/gry/zawolaj-sowe/` | Call the Owl game (EN, PL); `/assets/owl.js` and `/assets/owl.css` |
 | `/assets/style.css`, `/assets/app.js` | Shared styles; simulator and calculator (language from `<html lang>`) |
 | `/assets/fonts/` | Self-hosted Inter (SIL OFL, see `OFL-NOTICE.txt`) |
 | `CNAME`, `robots.txt`, `sitemap.xml`, `404.html` | Hosting files. Add every new page to `sitemap.xml` |
