@@ -1,0 +1,45 @@
+/* Call the Owl game. Every rule is scoped to #owlgame. Day and evening are part of the game, so it has one look in both themes. */
+#owlgame{--o-day:#dceafb;--o-night:#0b1b3f;--o-card:#fff;--o-ink:#0f172a;--o-soft:#57534e;--o-amber:#fbbf24;--o-line:#e6ddcf;height:100vh;height:100svh;max-height:900px;min-height:540px;display:flex;flex-direction:column;padding:0 max(16px,calc((100% - 40rem)/2));background:var(--o-day);color:var(--o-ink);line-height:1.4;transition:background-color 1.5s;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+#owlgame.night{background:var(--o-night)}
+#owlgame *{box-sizing:border-box}
+#owlgame.playing #stage{touch-action:none}
+#owlgame .hud{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:8px}
+#owlgame .round{width:52px;height:52px;border-radius:50%;border:2px solid var(--o-line);background:var(--o-card);color:var(--o-ink);display:grid;place-items:center;cursor:pointer;padding:0}
+#owlgame .round svg{width:26px;height:26px}
+#owlgame .round:disabled{opacity:.35;cursor:default}
+#owlgame [hidden]{display:none!important}
+#owlgame .dots{display:flex;gap:8px}
+#owlgame .dots i{width:16px;height:20px;border-radius:50%;background:#fff;border:2px solid #B9C9E6}
+#owlgame .dots i.on{background:var(--o-amber);border-color:#D99A06}
+#owlgame #stage{display:block;flex:1;min-height:0;width:100%;overflow:visible}
+#owlgame .tap{cursor:pointer;outline:none}
+#owlgame .tap:focus-visible .ring{opacity:1;stroke:#2563EB}
+#owlgame .ring{opacity:0;fill:none;stroke:#FBBF24;stroke-width:7;pointer-events:none}
+#owlgame .hint .ring{opacity:1;animation:ow-pulse 1s ease-in-out infinite alternate}
+@keyframes ow-pulse{from{stroke-width:4;opacity:.4}to{stroke-width:10;opacity:1}}
+#owlgame .move{transition:transform .8s cubic-bezier(.3,.8,.4,1),opacity .4s}
+#owlgame .face{transition:opacity .4s}
+#owlgame .drag{transition:none}
+#owlgame .idle{animation:ow-bob 2.4s ease-in-out infinite alternate}
+@keyframes ow-bob{to{transform:translateY(-6px)}}
+#owlgame .blink{animation:ow-blink .7s steps(2,jump-none) infinite}
+@keyframes ow-blink{to{opacity:.35}}
+#owlgame .wiggle{animation:ow-wig .5s ease-in-out 2}
+@keyframes ow-wig{25%{transform:rotate(-5deg)}75%{transform:rotate(5deg)}}
+#owlgame .hop{animation:ow-hop .5s ease-out 1}
+@keyframes ow-hop{45%{transform:translateY(-28px) scale(1.08)}}
+#owlgame .zzz{animation:ow-zz 2s ease-in-out infinite alternate}
+@keyframes ow-zz{from{opacity:.2;transform:translateY(8px)}to{opacity:1;transform:translateY(-8px)}}
+#owlgame .paint{position:absolute;width:0;height:0}
+#owlgame .twinkle{animation:ow-twinkle 1.8s ease-in-out infinite alternate}
+#owlgame .twinkle.d1{animation-delay:-.6s}#owlgame .twinkle.d2{animation-delay:-1.2s}
+@keyframes ow-twinkle{from{opacity:.35}}
+#owlgame .spread{animation:ow-spread .8s ease-out both}
+@keyframes ow-spread{from{transform:scale(.3,.7)}}
+#owlgame .pop-in{animation:ow-popin .45s ease-out 1 both}
+@keyframes ow-popin{from{opacity:0;scale:.5}}
+#owlgame .origin{transform-box:fill-box;transform-origin:center}
+#owlgame .caption{margin:0 0 8px;background:var(--o-card);border:1px solid var(--o-line);border-radius:14px;padding:8px 14px;font-size:.9rem;text-align:center;min-height:3.6em;display:flex;flex-direction:column;justify-content:center;-webkit-user-select:text;user-select:text}
+#owlgame .caption small{color:var(--o-soft);font-size:.75rem}
+#owlgame .parents{margin:0 0 12px;font-size:.8rem;text-align:center;color:var(--o-soft)}
+@media (prefers-reduced-motion:reduce){#owlgame .idle,#owlgame .blink,#owlgame .wiggle,#owlgame .hop,#owlgame .zzz,#owlgame .spread,#owlgame .twinkle,#owlgame .hint .ring{animation:none}#owlgame .move{transition:none}}
