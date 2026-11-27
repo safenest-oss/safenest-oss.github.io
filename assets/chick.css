@@ -1,0 +1,77 @@
+/* Feed the Chick game. Every rule is scoped to #chick; colours come from style.css. */
+#chick{--card:#fff;--sky:#dceafb;--cloud:#fff;--thumb:#1e3a8a;position:relative;height:100vh;height:100svh;max-height:760px;min-height:540px;max-width:44rem;margin:0 auto;display:flex;flex-direction:column;overflow:hidden;line-height:1.4;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+#chick.playing{touch-action:none}
+#chick [hidden]{display:none!important}
+#chick *{box-sizing:border-box}
+#chick button{font:inherit;color:inherit;cursor:pointer}
+#chick .hud{display:flex;align-items:center;gap:10px;padding-block:8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#chick .grow{flex:1;min-width:0}
+#chick .grow p{margin:0 0 4px;font-size:.875rem;font-weight:800}
+#chick .bar{display:flex;gap:3px}
+#chick .bar i{flex:1;height:12px;border-radius:4px;background:var(--sand-2);border:1px solid var(--line)}
+#chick .bar i.on{background:#FBBF24;border-color:#D99A06}
+#chick .icon-btn{flex:none;width:46px;height:46px;border-radius:14px;border:2px solid var(--line);background:var(--card);display:grid;place-items:center}
+#chick .icon-btn svg{width:22px;height:22px}
+#chick .field{position:relative;flex:1;min-height:0;overflow:hidden;background:var(--sky)}
+#chick .cloud{position:absolute;width:110px;height:34px;border-radius:34px;background:var(--cloud);opacity:.8;left:-130px;animation:drift 38s linear infinite}
+#chick .cloud::before{content:"";position:absolute;left:28px;top:-18px;width:48px;height:48px;border-radius:50%;background:inherit}
+#chick .cloud.c1{top:14%}#chick .cloud.c2{top:46%;animation-duration:52s;animation-delay:-30s}#chick .cloud.c3{top:74%;animation-duration:44s;animation-delay:-14s}
+@keyframes drift{to{transform:translateX(48rem)}}
+#chick .video{position:absolute;left:0;top:0;width:150px;height:134px;padding:6px;border-radius:16px;border:2px solid var(--line);background:var(--card);display:flex;flex-direction:column;gap:4px;align-items:stretch;touch-action:manipulation;will-change:transform}
+#chick .thumb{position:relative;height:66px;flex:none;border-radius:10px;background:var(--thumb);color:#fff;display:grid;place-items:center}
+#chick .thumb svg{width:44px;height:44px}
+#chick .thumb .play{position:absolute;right:5px;bottom:5px;width:18px;height:18px}
+#chick .video span.t{flex:1;display:grid;place-items:center;font-size:.875rem;font-weight:800;line-height:1.15;text-align:center;overflow:hidden}
+#chick .video.pop{animation:pop .3s ease-in forwards;pointer-events:none}
+@keyframes pop{to{opacity:0;scale:.4}}
+#chick .snack{position:absolute;left:0;top:0;width:44px;height:44px;pointer-events:none;z-index:3}
+#chick .home{position:relative;flex:none;padding-bottom:6px;background:var(--sky)}
+#chick .say{margin:0 12px;min-height:58px;border-radius:16px;padding:8px 14px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;font-size:1rem;background:var(--card);border:2px solid var(--line)}
+#chick .say.good{background:#e7f4ea;color:#14532d;border-color:transparent}
+#chick .say.bad{background:var(--tint);color:var(--amber-text);border-color:transparent}
+#chick .nestbox{position:relative;height:156px;max-width:380px;margin:0 auto}
+#chick .nestbox svg.scene{display:block;width:100%;height:100%}
+#chick .worm{position:absolute;width:76px;height:64px;padding:0;border:0;background:transparent;animation:wiggle .8s ease-in-out infinite alternate}
+#chick .worm svg{width:100%;height:100%}
+#chick .worm.w0{left:4px;bottom:16px}#chick .worm.w1{right:4px;bottom:16px}#chick .worm.w2{left:20px;bottom:78px}
+#chick .worm.shoo{animation:shoo .5s ease-in forwards;pointer-events:none}
+@keyframes wiggle{from{transform:rotate(-8deg) translateY(0)}to{transform:rotate(8deg) translateY(-5px)}}
+@keyframes shoo{to{transform:translateY(-90px) rotate(200deg);opacity:0}}
+#chick .beak-low{transition:transform .1s}
+#chick .chew .beak-low{animation:chew .22s ease-in-out 4}
+#chick .chew .bounce{animation:hop .5s ease-out 1}
+#chick .yuck .bounce{animation:shake .5s ease-in-out 1}
+@keyframes chew{50%{transform:translateY(8px)}}
+@keyframes hop{40%{transform:translateY(-10px)}}
+@keyframes shake{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+#chick .panel{position:absolute;inset:0;z-index:5;background:var(--sand);overflow:auto;display:flex;padding-block:20px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#chick .panel>div{margin:auto;width:100%;max-width:30rem;display:flex;flex-direction:column;gap:14px;text-align:center}
+#chick .panel h1{margin:0;font-size:2rem;font-weight:800;line-height:1.15}
+#chick .panel h2{margin:0;font-size:1.15rem;font-weight:800}
+#chick .panel p{margin:0}
+#chick .panel.night{background:#0B1B3F;color:#F8F4ED}
+#chick .box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:10px;text-align:left}
+#chick .how{display:flex;align-items:center;gap:12px;font-weight:600}
+#chick .how svg{flex:none;width:48px;height:48px}
+#chick .c-btn{min-height:56px;border-radius:16px;border:0;background:var(--blue);color:#fff;font-size:1.15rem;font-weight:800;padding:10px 18px}
+#chick .c-btn[disabled]{opacity:.45;cursor:default}
+#chick .c-btn.second{background:var(--card);color:var(--ink);border:2px solid var(--line)}
+#chick .seg{display:flex;gap:8px}
+#chick .seg button{flex:1;min-height:48px;border-radius:14px;border:2px solid var(--line);background:var(--card);font-weight:600}
+#chick .seg button[aria-pressed="true"]{border-color:var(--blue);background:var(--blue);color:#fff}
+#chick .small{font-size:.875rem;color:var(--stone)}
+#chick .night .small{color:#CBD3E6}
+#chick .count{font-size:3rem;font-weight:800;color:#FBBF24;font-variant-numeric:tabular-nums}
+#chick .art{display:block;width:100%;max-width:17rem;margin:0 auto}
+#chick ul{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:8px}
+#chick .talk{background:var(--tint);color:var(--amber-text);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:8px}
+#chick .flyer{animation:fly 3.2s ease-in-out 1 both}
+#chick .wing{transform-origin:0 0;animation:flap .35s ease-in-out 9 alternate}
+@keyframes fly{from{transform:translate(0,50px)}to{transform:translate(0,-8px)}}
+@keyframes flap{from{transform:rotate(-28deg)}to{transform:rotate(22deg)}}
+#chick .zzz{animation:zz 2.4s ease-in-out infinite alternate}
+@keyframes zz{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:translateY(-5px)}}
+@media (prefers-reduced-motion:reduce){#chick .cloud,#chick .worm,#chick .flyer,#chick .wing,#chick .zzz,#chick .chew .bounce,#chick .yuck .bounce{animation:none}#chick .cloud{display:none}}
+#chick .panel h1{letter-spacing:-.01em}
+#chick .panel h2{line-height:1.2}
+#chick .video{font-size:16px}

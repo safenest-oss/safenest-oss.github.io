@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Feed the Chick: a game about good videos | SafeNest OSS</title>
+<meta name="description" content="A moving game for children aged about 7-10: tap good videos to feed a growing bird, chase bugs away and take breaks. No accounts, no ads, no data collected.">
+<meta name="theme-color" content="#2563eb">
+<meta property="og:title" content="Feed the Chick: a game about good videos | SafeNest OSS">
+<meta property="og:description" content="A moving game for children aged about 7-10: tap good videos to feed a growing bird, chase bugs away and take breaks. No accounts, no ads, no data collected.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://safenest-oss.org/games/feed-the-chick/">
+<meta property="og:image" content="https://safenest-oss.org/assets/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SafeNest OSS: small, open source tools that make the internet safer for children and parents">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://safenest-oss.org/games/feed-the-chick/">
+<link rel="alternate" hreflang="en" href="https://safenest-oss.org/games/feed-the-chick/">
+<link rel="alternate" hreflang="pl" href="https://safenest-oss.org/pl/gry/nakarm-piskle/">
+<link rel="alternate" hreflang="x-default" href="https://safenest-oss.org/games/feed-the-chick/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/chick.css">
+<script src="/assets/chick.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="/"><svg width="40" height="40" viewBox="0 0 48 48" role="img" aria-label="SafeNest"><rect width="48" height="48" rx="12" fill="#2563eb"/><ellipse cx="24" cy="18" rx="6.5" ry="8" fill="#fbbf24"/><path d="M9 27 Q24 47 39 27" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/><path d="M14 32 Q24 43 34 32" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7"/></svg><span>SafeNest <small>OSS</small></span></a>
+<nav class="nav" aria-label="Main"><a href="/parents/">For parents</a><a href="/no-shorts/">No Shorts</a><a href="/guides/youtube-shorts-limit/">Guides</a><a href="/about/">About</a><a href="https://github.com/safenest-oss">GitHub</a><a class="lang" href="/pl/gry/nakarm-piskle/" hreflang="pl" lang="pl">Polski</a></nav>
+</div></header>
+<main id="main">
+
+<div id="chick">
+  
+  <div class="hud">
+    <div class="grow"><p id="stage">Chick</p><div class="bar" id="bar" role="img" aria-label="Snacks: 0 of 15"></div></div>
+    <button type="button" class="icon-btn" id="sound" aria-pressed="true" aria-label="Sound on"></button>
+    <button type="button" class="icon-btn" id="pause" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.5"/><rect x="14" y="5" width="4" height="14" rx="1.5"/></svg></button>
+  </div>
+  <div class="field" id="field"><i class="cloud c1"></i><i class="cloud c2"></i><i class="cloud c3"></i></div>
+  <div class="home" id="home">
+    <p class="say" id="say" role="status">Tap the good videos!</p>
+    <div class="nestbox" id="nestbox"></div>
+  </div>
+  <div class="panel" id="panel"></div>
+</div>
+<noscript><p class="note">Please turn on JavaScript to play Feed the Chick.</p></noscript>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="about"><div class="logo"><svg width="32" height="32" viewBox="0 0 48 48" role="img" aria-label="SafeNest"><rect width="48" height="48" rx="12" fill="#2563eb"/><ellipse cx="24" cy="18" rx="6.5" ry="8" fill="#fbbf24"/><path d="M9 27 Q24 47 39 27" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/><path d="M14 32 Q24 43 34 32" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7"/></svg><span>SafeNest OSS</span></div><p>Small, open source tools that make the internet safer for children and parents.</p><p class="fine">This site uses no cookies and no analytics.</p></div>
+<nav aria-label="Footer"><a href="https://github.com/safenest-oss">GitHub</a><a href="https://github.com/safenest-oss/no-shorts/blob/main/PRIVACY.md">Privacy policy</a><a href="https://github.com/safenest-oss/no-shorts/blob/main/LICENSE">MIT license</a></nav>
+</div></footer>
+</body>
+</html>

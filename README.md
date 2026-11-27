@@ -17,6 +17,8 @@ Source of the SafeNest OSS website: <https://safenest-oss.org>
 | `/pl/` | Landing page for parents (PL) |
 | `/pl/o-nas/` | About (PL) |
 | `/pl/poradniki/limit-shorts-na-telefonie/` | Guide (PL) |
+| `/games/feed-the-chick/` | Moving game for children (EN) |
+| `/pl/gry/nakarm-piskle/` | Moving game for children (PL) |
 
 ## Contributing
 
